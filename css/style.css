@@ -1,0 +1,217 @@
+body{
+    background-color: #111010;
+   }
+   
+header{
+       position: fixed;
+       width: 100%;
+       top: 0;
+       z-index: 100;
+       transition: 0.3s ease-in-out;
+   }
+   .nav-active {
+     background-color: black;
+       opacity: 90%;
+       box-shadow: 5px -1px 12px -5px grey;
+   }
+   .navigation-wraper{
+       display: flex;
+       justify-content: space-around;
+       padding: 30px;
+       position: relative;
+   }
+   
+   #nav-ul{
+       display: flex;
+       max-width: 800px;
+       width: 100%;
+   }
+   .nav-active {
+    background-color:black;
+    opacity: 90%;
+    box-shadow: 5px -1px 12px -5px grey;
+}
+   .toggle-menu{
+       position: fixed;
+       top: 10px;
+       right: 10px;
+       width: 30px;
+       height: 30px;
+       cursor: pointer;
+       z-index: 100;
+       display: none;
+   }
+.main-div-logo{
+    width: 90px;
+    height: 35px;
+    border-style:solid;
+    border-color: white;
+    border-width: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background-color:  rgb(255, 196, 198);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.3s linear;
+}
+.line1{
+    top: 20%;
+}
+.line3{
+    top: 80%;
+}
+.toggleActive .line1{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.toggleActive .line2{
+  display: none;
+}
+.toggleActive .line3{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.navigation.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color:#674c27;
+    justify-content: center;
+    align-items: center;
+}
+.a-tag{
+    font-size: 25px;
+    font-family: 'Josefin Slab';
+    color: white;
+    font-weight: 800;
+}
+.class-li{
+    font-size: 20px;
+    margin-left: 35px;
+    font-family: 'Josefin Slab';
+}
+.li-tag{
+    margin-left: 0;
+}
+.litag{
+    margin-left: 0;
+}
+
+
+@media (max-width: 480px){
+    .navigation{
+        display: none;
+    }
+    .toggle-menu{
+        display: block;
+    }
+    .navigation-wraper{
+        flex-direction: column;
+    }
+    #nav-ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .active{
+        display: block;
+    }
+    .activeli{
+        font-size: 40px;
+        margin-left: 0 !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+/* slide styles*/
+.image-slider {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+  .slider-wraper {
+    position: relative;
+  }
+  .arrow {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    opacity: 40%;
+    background-color: black;
+  }
+  .arrow-left {
+    left:40px;
+  }
+  .arrow-right {
+    right: 40px;
+  }
+  .dots-parent {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .child {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 10px;
+  }
+  .activeDot{
+    opacity: 0.5;
+  
+  }
+  .slider-wraper {
+    position: relative;
+  }
+  .bg-image {
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  /* slider inside div*/
+#insideDiv{
+    max-width: 600px;
+    width: 100%;
+    height: 110px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutme{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Josefin Slab';
+    font-weight: 700;
+    color: white;
+}
+/*second section*/
+.second-section{
+    margin-top: 1000px;
+}
