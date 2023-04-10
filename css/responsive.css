@@ -1,0 +1,8 @@
+
+@media (max-width: 1010px){
+    .second-section-div{
+        max-width: 600px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
