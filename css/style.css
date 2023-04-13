@@ -33,10 +33,10 @@ header{
 }
    .toggle-menu{
        position: fixed;
-       top: 10px;
-       right: 10px;
-       width: 30px;
-       height: 30px;
+       top: 25px;
+       right: 30px;
+       width: 40px;
+       height: 40px;
        cursor: pointer;
        z-index: 100;
        display: none;
@@ -85,7 +85,7 @@ header{
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color:#674c27;
+    background-color:black;
     justify-content: center;
     align-items: center;
 }
@@ -108,7 +108,7 @@ header{
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 780px){
     .navigation{
         display: none;
     }
@@ -193,6 +193,7 @@ header{
     max-width: 600px;
     width: 100%;
     height: 110px;
+    display: flex;
     border-style: solid;
     border-width: 4px;
     border-color: white;
@@ -200,7 +201,6 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -365,7 +365,7 @@ header{
     width: 100%;
 }
 .resume-h3{
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
 }
 .left-edu-div{
@@ -490,8 +490,10 @@ header{
 /*footer*/
 .footer-div{
     background-color:black;
+    width: 100%;
 }
 .footerDiv{
+    width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
