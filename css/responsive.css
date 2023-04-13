@@ -175,4 +175,7 @@ align-items: center;    }
     .about-p{
         text-align: center;
     }
+    #insideDiv{
+        height: 85px;
+    }
 }
